@@ -7,10 +7,10 @@
     margin: 0;
     padding: 0;
 } */
-/* .container {
+.container {
     display: flex;
     
-} */
+}
 .dollar-pic {
     height: 44px;
     width: 48px;
@@ -20,7 +20,7 @@
 
 .calculation-area {
     margin: 35px 45px;
-    background-color:rgb(250, 219, 224);
+    background-color:aqua;
 }
 .no-border-feild {
     border: 0px;

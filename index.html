@@ -36,10 +36,10 @@
     <!------------ Main Content --------------->
 
     <main>
-        <section class="container d-flex">
+        <section class="container">
             <div class="row">
                 <div class="col">
-                    <img class=" " src="images/creating_a_budget_sq_707_707.jpg" alt="">
+                    <img class=" " src="images/mini-bank-image.jpg" alt="">
                 </div>
                 <div class="col calculation-area">
                     <div>
@@ -47,65 +47,64 @@
                             <h6 class="text-center">Income</h6>
                             <label class="col-sm-2 col-form-label fw-bold pt-2">Income</label>
                             <div class="col-sm-7">
-                                <input type="text" class="form-control" id="income">
+                                <input id="income-field" type="text" class="form-control">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <h6 class="text-center">Expense</h6>
                             <label class="col-sm-2 col-form-label fw-bold pt-2">Food</label>
                             <div class="col-sm-7">
-                                <input type="text" class="form-control" id="food">
+                                <input id="food-field" type="text" class="form-control">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <label class="col-sm-2 col-form-label fw-bold pt-2">Rent</label>
                             <div class="col-sm-7">
-                                <input type="text" class="form-control" id="rent">
+                                <input id="rent-field" type="text" class="form-control">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <label class="col-sm-2 col-form-label fw-bold pt-2">Clothes</label>
                             <div class="col-sm-7">
-                                <input type="text" class="form-control" id="clothes">
+                                <input id="clothes-field" type="text" class="form-control">
                             </div>
                         </div>
                         <div class="d-flex justify-content-center">
-                            <button onclick="expenseCalculate()" type="button"
-                                class="btn btn-primary">Calculate</button>
+                            <button id="expense-btn" type="button" class="btn btn-primary">Calculate</button>
 
                         </div>
                         <div class="row mb-3 mt-3">
                             <label class="col-sm-5 col-form-label fw-bold pt-2">Total Expenses</label>
                             <div class="col-sm-7">
-                                <input type="text" class="form-control no-border-feild" id="totalExpense">
+                                <input id="expense-field" type="text" class="form-control no-border-field">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <label class="col-sm-5 col-form-label fw-bold pt-2">Balance</label>
                             <div class="col-sm-7">
-                                <input type="text" class="form-control no-border-feild" id="balance">
+                                <input id="balance-field" type="text" class="form-control no-border-field">
                             </div>
                         </div>
                         <div class="row mb-3">
                             <label class="col-sm-3 col-form-label fw-bold pt-2">Save</label>
                             <div class="col-sm-5">
-                                <input type="text" class="form-control" id="percent">
+                                <input id="percent-field" type="text" class="form-control">
                             </div>
                             <h4 class="col-sm-1">%</h4>
-                            <button onclick="saveMoney()" type="button" class="col-sm-3 btn btn-primary">Save</button>
+                            <button id="save-btn" type="button" class="col-sm-3 btn btn-primary">Save</button>
 
                         </div>
-                        <div class="row g-3">
+                        <div class="row g-2">
                             <div class="row mb-3 mt-3">
                                 <label class="col-sm-5 col-form-label fw-bold pt-2">Saving Amount</label>
                                 <div class="col-sm-7">
-                                    <input type="text" class="form-control no-border-feild" id="save-amount">
+                                    <input id="savings-field" type="text" class="form-control no-border-field">
                                 </div>
                             </div>
                             <div class="row mb-3">
                                 <label class="col-sm-7 col-form-label fw-bold pt-2">Remaining Balance</label>
                                 <div class="col-sm-5">
-                                    <input type="text" class="form-control no-border-feild" id="remainBalance">
+                                    <input id="remaining-field" type="text" class="form-control no-border-field">
                                 </div>
                             </div>
 
