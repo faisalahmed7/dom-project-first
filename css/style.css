@@ -1,12 +1,7 @@
-/* *{
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-} */
-/* body{
-    margin: 0;
-    padding: 0;
-} */
+
+body{
+    background-color: rgba(255, 255, 255, 0.842);
+}
 .container {
     display: flex;
     
@@ -18,9 +13,9 @@
 }
 
 
-.calculation-area {
+.cal-area {
     margin: 35px 45px;
-    background-color:aqua;
+    background-image:linear-gradient(#e66465, #9198e5);
 }
 .no-border-feild {
     border: 0px;

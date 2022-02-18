@@ -4,13 +4,10 @@ function totalExpenseCalculate() {
     const foodcostInput = Number(document.getElementById("food-field").value);
     const houserentInput = Number(document.getElementById("rent-field").value);
     const myClothesInput = Number(document.getElementById("clothes-field").value);
-    let expense = foodcostInput + houserentInput + myClothesInput;
-    let myBalance = incomeInput - expense;
-    document.getElementById("expense-field").value = expense;
-    document.getElementById("balance-field").value = myBalance;
-
-
-    income.value = '';
+    let expenseTotal = foodcostInput + houserentInput + myClothesInput;
+    let myRemainingBalance = incomeInput - expenseTotal;
+    document.getElementById('expense-field').value = expenseTotal;
+    document.getElementById('balance-field').value = myRemainingBalance;
 
 }
 
@@ -23,16 +20,15 @@ document.getElementById('expense-btn').addEventListener('click', function () {
 //Savings From Income 
 
 function saveAmount() {
-    const percent = document.getElementById("percent-field").value;
-    const num = document.getElementById("income-field").value;
-    document.getElementById("savings-field").value = (num / 100) * percent;
+    const percentCalculate = document.getElementById("percent-field").value;
+    const amount = document.getElementById("income-field").value;
+    document.getElementById('savings-field').value = (amount / 100) * percentCalculate;
 
-    // Calculate the Total remain Balance of your Mini Bank.
+    // Calculate the Total remain Balance of your Monthly Expense.
 
     const previousBalance = document.getElementById("balance-field").value;
     const saveBalance = document.getElementById("savings-field").value;
-    document.getElementById("remaining-field")
-        .value = previousBalance - saveBalance;
+    document.getElementById('remaining-field').value = previousBalance - saveBalance;
 }
 
 document.getElementById('save-btn').addEventListener('click', function () {
